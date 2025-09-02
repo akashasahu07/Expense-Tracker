@@ -5,10 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
 
+        <div class="balance">
+            <h2>Balance: <i class="fa-solid fa-indian-rupee-sign"></i> <span id="balance">0</span></h2>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="description" placeholder="Enter Description">
+            <input type="number" id="amount" placeholder="Enter Amount">
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+
+            <button onclick="addTransaction()">Add</button>
+        </div>
+
+        <div class="transaction">
+            <h3>Transaction</h3>
+            <ul id="transaction-list"></ul>
+        </div>
+
+        <canvas id="balance-chart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
