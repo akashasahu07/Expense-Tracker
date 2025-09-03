@@ -425,13 +425,13 @@ button:active {
         padding: 12px 15px;
         font-size: 0.95rem;
     }
-    
+
     #transaction-list li button {
         padding: 6px 8px;
         min-width: 32px;
         height: 28px;
     }
-    
+
     #transaction-list li button i {
         font-size: 0.8rem;
     }
